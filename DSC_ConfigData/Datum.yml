@@ -29,3 +29,9 @@ ResolutionPrecedence:
   - 'Roles\All'
 #  - 'AllNodes\<%= $CurrentNode.PSObject.Properties.where{$_.Name -eq $Node.Name}.Value%>\Roles' #script block execution
 #  - 'AllNodes\All\Roles'
+
+lookup_options:
+  Shared1:
+    merge_hash: deep
+    merge_basetype_array: deep
+    merge_hash_array: deep
